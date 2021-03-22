@@ -15,7 +15,7 @@ const load = () => {
       switch (currentIndex) {
         case 0:
           header.textContent = 'Bezpieczeństwo i ochrona baz danych';
-          img.src = '../img/webDesign.png';
+          img.src = './img/webDesign.png';
           main.style.background = '';
           header.style.padding = '0px';
           header.style.background = 'transparent';
@@ -23,7 +23,7 @@ const load = () => {
         case 1:
           header.textContent = 'Bezpieczne bazy danych';
           img.src = '';
-          main.style.background = 'url(../img/security.jpg)';
+          main.style.background = 'url(./img/security.jpg)';
           main.style.backgroundRepeat = 'no-repeat';
           main.style.backgroundSize = 'cover';
           header.style.background = '#000';
@@ -34,7 +34,7 @@ const load = () => {
           header.textContent = 'Przechowywanie danych';
           main.style.background = '';
           header.style.padding = '0px';
-          img.src = '../img/dataStorage.png';
+          img.src = './img/dataStorage.png';
           header.style.background = 'transparent';
           break;
         default:
