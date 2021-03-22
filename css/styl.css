@@ -98,11 +98,12 @@ p {
   animation-name: appear;
   animation-duration: 4s;
   animation-delay: 1s;
+  padding-left: 2rem;
 }
 .button--themed {
   background: var(--hot-pink);
   border: 1px solid var(--hot-pink);
-  margin-right: 2rem;
+  margin: 2rem;
 }
 .button--empty {
   border: 1px solid var(--hot-pink);
@@ -257,9 +258,13 @@ p {
   margin: 5rem 0;
   line-height: 2;
   width: 55rem;
+  font-size: 1.8rem;
 }
 .threats__container-p {
   width: 55rem;
+}
+.threats__container-p > p {
+  font-size: 1.8rem;
 }
 .threats__container > p {
   color: inherit;
@@ -298,9 +303,11 @@ p {
 }
 .newsletter {
   display: flex;
+  align-items: center;
   padding: 4rem;
   background: var(--dark-clr);
   color: var(--font-clr);
+  min-height: 40vh;
 }
 .newsletter__header {
   color: inherit;
@@ -381,6 +388,7 @@ p {
   }
   .threats__text {
     max-width: 30rem;
+    margin: -2rem 0 5rem 0;
   }
   .section__header {
     font-size: 3.2rem;
