@@ -1,0 +1,93 @@
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    padding: 3rem;
+    width: 60%;
+    margin: 5rem auto;
+    background: rgb(246, 246, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 1px #333;
+}
+.socials {
+    display: flex;
+}
+.circle {
+    margin: 0 1rem;
+    border-radius: 100px;
+    height: 5rem;
+    width: 5rem;
+    background: var(--hot-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-phone,.fa-envelope,.fa-facebook-f {
+    font-size: 2rem;
+    color: #fff;
+}
+.left {
+    width: 50%;
+    border-right: 1px solid #333;
+}
+h4 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var(--hot-pink);
+}
+p {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: rgb(143, 143, 143);
+    width: 70%;
+}
+.right {
+    text-align: center;
+    width: 50%;
+}
+.container-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input {
+    padding: 0.5rem 2rem;
+    margin-top: 3rem;
+}
+.footer > p{
+    color: #fff;
+    width: 100%;
+}
+
+@media screen and (max-width: 873px) {
+    .contact-main {
+        padding: 2rem;
+    }
+    .right,.left {
+        width: 100%;
+    }
+    .left {
+        padding-bottom: 2rem;
+        border: none;
+        border-bottom: 1px solid #333;
+    }
+    .contact {
+        width: 100%;
+        flex-direction: column;
+    }
+    .socials {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    h4 {
+        text-align: center;
+    }
+    p {
+        width: 100%;
+    }
+}

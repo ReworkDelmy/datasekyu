@@ -353,6 +353,27 @@ p {
   transition: transform 200ms ease-in-out;
 }
 
+
+.regimen {
+  background: var(--dark-clr);
+  padding: 4rem;
+}
+.regimen > h1 {
+  font-size: 3rem;
+}
+.regimen > div {
+  margin-top: 5rem;
+}
+.regimen > div > h4 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.regimen > div > p {
+  text-transform: lowercase;
+  font-size: 1.4rem;
+}
+
 @media screen and (max-width: 873px) {
   html {
     font-size: 9px;
