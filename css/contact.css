@@ -1,3 +1,5 @@
+/* Plik css do podstrony contact.html */
+
 .contact-main {
     display: flex;
     justify-content: center;
@@ -63,7 +65,13 @@ input {
     color: #fff;
     width: 100%;
 }
-
+.btn-send {
+    border: none;
+    background: var(--hot-pink);
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    color: #fff;
+}
 @media screen and (max-width: 873px) {
     .contact-main {
         padding: 2rem;

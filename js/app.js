@@ -1,23 +1,23 @@
-const load = () => {
-  const buttons = document.querySelectorAll('.circle-container__dot');
+const load = () => {  //Funckja która jest wyłowywana gdy strona się wyświetli
+  const buttons = document.querySelectorAll('.circle-container__dot'); //Pobieranie elementów
   const header = document.querySelector('.heading');
   const img = document.querySelector('.main__image');
   const main = document.querySelector('.main');
 
-  let currentIndex = 0;
+  let currentIndex = 0; //ustawienie indexu na 0
 
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      buttons[currentIndex].classList.remove('circle-container__dot--active');
-      button.classList.add('circle-container__dot--active');
-      currentIndex = index;
+  buttons.forEach((button, index) => { //pętla po wszystkich przyciskach
+    button.addEventListener('click', () => { //Ustawienie słuchania na kliknięcie
+      buttons[currentIndex].classList.remove('circle-container__dot--active'); //Usunięcie klasy z obecnego przycisku
+      button.classList.add('circle-container__dot--active'); //ustawienie innemu przyciskowi klasy aktywnej
+      currentIndex = index; //zmiana indexu
 
-      switch (currentIndex) {
-        case 0:
-          header.textContent = 'Bezpieczeństwo i ochrona baz danych';
-          img.src = './img/webDesign.png';
-          img.style.display = 'inline';
-          main.style.background = '';
+      switch (currentIndex) { //zmienianie zdarzen na podstawie indexu
+        case 0: //przypadek
+          header.textContent = "Bezpieczeństwo i ochrona baz danych"; //zmiana tekstu
+          img.src = './img/webDesign.png'; //zmiana zdjecia
+          img.style.display = 'inline'; //zmiana wyswietlania
+          main.style.background = ''; //zmiana tła
 
           header.style.background = 'transparent';
           break;
@@ -45,4 +45,4 @@ const load = () => {
   });
 };
 
-load();
+load(); //wyłowanie funkcji
